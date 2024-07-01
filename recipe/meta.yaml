@@ -27,10 +27,8 @@ requirements:
 test:
   commands:
     - test -f $PREFIX/include/svt-av1/EbSvtAv1.h     # [unix]
-    - test -f $PREFIX/lib/libSvtAv1Dec${SHLIB_EXT}   # [unix]
     - test -f $PREFIX/lib/libSvtAv1Enc${SHLIB_EXT}   # [unix]
     - SvtAv1EncApp --help  # [unix and build_platform == target_platform]
-    - SvtAv1DecApp --help  # [unix and build_platform == target_platform]
 
 about:
   home: https://gitlab.com/AOMediaCodec/SVT-AV1
